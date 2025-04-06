@@ -7,7 +7,6 @@ const Recuperacion = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí agregarías la lógica para la recuperación de contraseña.
     console.log("Email para recuperación:", email);
   };
 
@@ -32,6 +31,10 @@ const Recuperacion = () => {
         <p className="back-to-login">
           <Link to="/login">Volver a Iniciar Sesión</Link>
         </p>
+      </div>
+
+      <div className="image-box">
+        <img src="/user.jpg" alt="user" />
       </div>
     </div>
   );

@@ -1,113 +1,121 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  body {
-    background-color: #eae6f8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  .container {
-    display: flex;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(41, 28, 28, 0.055);
-    overflow: hidden;
-    width: 800px;
-    height: 450px;
-  }
-  
-  .recover-box {
-    padding: 40px;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  h2 {
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  p {
-    color: #777;
-    margin-bottom: 20px;
-  }
-  
-  .input-group {
-    width: 100%;
-    text-align: left;
-    margin-bottom: 15px;
-  }
-  
-  label {
-    display: block;
-    font-size: 14px;
-    margin-bottom: 5px;
-    color: #555;
-  }
-  
-  input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  .recover-btn {
-    background-color: #6b50ff;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 16px;
-    margin-top: 10px;
-  }
-  
-  .recover-btn:hover {
-    background-color: #5738e1;
-  }
-  
-  .back-to-login {
-    margin-top: 20px;
-    font-size: 14px;
-  }
-  
-  .back-to-login a {
-    color: #6b50ff;
-    text-decoration: none;
-  }
-  
-  .back-to-login a:hover {
-    text-decoration: underline;
-  }
-  
-  .image-box {
-    width: 50%;
-    background: linear-gradient(135deg, #6b50ff, #8750ff);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .image-box img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    max-height: 100%;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+}
+
+body {
+  background-color: #f5f0ea; /* Beige suave */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url('/flogin.png'); /* Fondo elegante como en login */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  display: flex;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(41, 28, 28, 0.1);
+  overflow: hidden;
+  width: 800px;
+  height: 450px;
+}
+
+.recover-box {
+  padding: 40px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+}
+
+h2 {
+  color: #661a1a; /* Rojo oscuro elegante */
+  margin-bottom: 10px;
+}
+
+p {
+  color: #7a6565; /* Marrón suave */
+  margin-bottom: 20px;
+}
+
+.input-group {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #5c3b3b; /* Marrón oscuro */
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c9b7af; /* Borde beige */
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #fffaf7; /* Fondo suave */
+}
+
+.recover-btn {
+  background: linear-gradient(to right, #8a2424, #661a1a); /* Rojo oscuro degradado */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 10px;
+  box-shadow: 0 4px 15px rgba(138, 36, 36, 0.3);
+}
+
+.recover-btn:hover {
+  background: linear-gradient(to right, #742020, #500e0e); /* Más oscuro al pasar el mouse */
+}
+
+.back-to-login {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #a89372; /* Dorado suave */
+}
+
+.back-to-login a {
+  color: #968366;
+  text-decoration: none;
+}
+
+.back-to-login a:hover {
+  text-decoration: underline;
+  color: #968366;
+}
+
+.image-box {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-left: 1px solid #e0d2c1;
+}

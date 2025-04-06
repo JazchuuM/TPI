@@ -1,55 +1,23 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from './assets/vite.svg';
-import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Login from './pages/Login';
-import Registro from './pages/Registro';  
-import './pages/Login.css';          
+
+import Registro from './pages/Registro';
 import Recuperacion from './pages/Recuperacion';
 import Principal from './pages/Principal';
-import './pages/Principal.css';  
+import Login from './pages/Login';
 
+
+import './pages/Principal.css';
+import './index.css'
+import './pages/Login.css';
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <Router>
       <Routes>
-        
-        <Route 
-          path="/" 
-          element={  
-            <div>  
-              <div>
-                <a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
-                  <img src={viteLogo} className="logo" alt="Vite logo" />
-                </a>
-                <a href="https://react.dev" target="_blank" rel="noopener noreferrer">
-                  <img src={reactLogo} className="logo react" alt="React logo" />
-                </a>
-              </div>
-              <h1>Vite + React</h1>
-              <div className="card">
-                <button onClick={() => setCount(count + 1)}>
-                  count is {count}
-                </button>
-                <p>
-                  Edit <code>src/App.jsx</code> and save to test HMR
-                </p>
-              </div>
-              <p className="read-the-docs">
-                Click on the Vite and React logos to learn more
-              </p>
-            </div>
-          } 
-        />
-        
-        <Route path="/login" element={<Login />} />   
-        <Route path="/registro" element={<Registro />} />   
+        <Route path="/" element={<Login />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/registro" element={<Registro />} />
         <Route path="/recuperacion" element={<Recuperacion />} />
-        <Route path="/Principal" element={<Principal />} />
-        
+        <Route path="/principal" element={<Principal />} />
       </Routes>
     </Router>
   );

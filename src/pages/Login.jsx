@@ -11,9 +11,8 @@ const Login = () => {
     e.preventDefault();
     console.log('Email:', email);
     console.log('Password:', password);
-    
-    // Aquí es donde podrías manejar la autenticación (API, etc.)
-    // Una vez autenticado, rediriges al usuario a la página principal. Trabajo meli
+
+    // Aquí podrías manejar la autenticación
     navigate('/principal');
   };
 
@@ -21,7 +20,11 @@ const Login = () => {
     <div className="container">
       <div className="login-box">
         <h2>Iniciar sesión</h2>
-        <p>No tienes una cuenta? <Link to="/registro">Haz click aquí</Link></p> 
+
+        <div className="login-links">
+          ¿No tienes una cuenta? <Link to="/registro">Haz clic aquí</Link>
+        </div>
+
         <form onSubmit={handleSubmit}>
           <div className="input-group">
             <label>Email:</label>
@@ -45,14 +48,15 @@ const Login = () => {
           </div>
           <button type="submit" className="login-btn">Iniciar sesión</button>
         </form>
-        {/* Enlace para la recuperación de contraseña */}
-        <p className="forgot-password">
+
+        <div className="forgot-password">
           <Link to="/recuperacion">¿Te olvidaste tu contraseña? Recuperala aquí.</Link>
-        </p>
+        </div>
       </div>
-      <div className="image-box">
-        <img src="/user.png" alt="Usuario" />
-      </div>
+
+     
+        <img src="/user.jpg" alt="Usuario" />
+      
     </div>
   );
 };

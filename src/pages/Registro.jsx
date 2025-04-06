@@ -62,10 +62,10 @@ const Registro = () => {
           <button type="submit" className="login-btn">Registrarse</button>
         </form>
       </div>
-      <div className="image-box">
-        <img src="/user.png" alt="Usuario" />
+      
+        <img src="/user.jpg" alt="Usuario" />
       </div>
-    </div>
+    
   );
 };
 
